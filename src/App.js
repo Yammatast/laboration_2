@@ -1,19 +1,11 @@
-import './App.css';
-import { useState } from 'react';
-import Form from './components/Form';
-import SuccessView from './components/SuccessView';
+import Main from './components/Main/Main';
+import { JokeProvider } from './context/jokeContext';
 
 function App() {
-    const [success, setSuccess] = useState(false);
-
     return (
-        <div className="App">
-            {success ? (
-                <SuccessView setSuccess={setSuccess} />
-            ) : (
-                <Form setSuccess={setSuccess} />
-            )}
-        </div>
+        <JokeProvider>
+            <Main />
+        </JokeProvider>
     );
 }
 

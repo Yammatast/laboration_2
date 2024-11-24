@@ -1,13 +1,16 @@
-function Button({ children, disabled, onClickEvent, type }) {
+import { StyledButton } from './Button.styles';
+
+function Button({ children, disabled, onClickEvent, type, mode }) {
     return (
-        <button
+        <StyledButton
             className="cool-button"
             type={type}
+            mode={mode}
             disabled={disabled}
             onClick={onClickEvent}
         >
             {children}
-        </button>
+        </StyledButton>
     );
 }
 

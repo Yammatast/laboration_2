@@ -1,3 +1,5 @@
+import { LabelStyle } from "./FormFieldString.styles";
+
 function FormFieldString({
     id,
     children,
@@ -14,7 +16,9 @@ function FormFieldString({
 
     return (
         <>
-            <label className="label-text" htmlFor={id}>{children}</label>
+            <LabelStyle className="label-text" htmlFor={id}>
+                {children}
+            </LabelStyle>
             <input
                 id={id}
                 value={value}
