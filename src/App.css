@@ -1,0 +1,30 @@
+.App{
+    padding: 20rem;
+
+}
+
+.wow-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding-bottom: 400px;
+}
+
+.cool-button {
+    background-color: #16e5f0;
+    color: #AD3021;
+
+}
+
+.label-text {
+    font-size: 60px;
+
+}
+
+.return-view {
+    display: flex;
+    flex-direction: column-reverse;
+}
