@@ -1,4 +1,4 @@
-import { LabelStyle } from "./FormFieldString.styles";
+import { LabelStyle } from './FormFieldString.styles';
 
 function FormFieldString({
     id,

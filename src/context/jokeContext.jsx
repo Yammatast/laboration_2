@@ -57,7 +57,7 @@ export const JokeProvider = ({ children }) => {
         setKeyword,
         success,
         setSuccess,
-        setError
+        setError,
     };
     return (
         <JokeContext.Provider value={value}>{children}</JokeContext.Provider>
